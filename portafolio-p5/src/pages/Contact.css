@@ -1,0 +1,41 @@
+.contact-container {
+  min-height: 100vh;
+  padding: 50px 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-size: 4rem;
+  color: var(--p5-white);
+  text-shadow: 4px 4px 0px var(--p5-red);
+  margin-bottom: 60px;
+  text-align: center;
+  transform: rotate(-2deg);
+}
+
+.links-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.contact-link {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  font-size: 2.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 4px solid var(--p5-white);
+  clip-path: polygon(2% 0, 100% 5%, 98% 100%, 0 95%);
+  color: var(--p5-white);
+}
+
+/* Colores alternados para los botones de contacto */
+.bg-black { background-color: var(--p5-black); }
+.bg-white { background-color: var(--p5-white); color: var(--p5-black); border-color: var(--p5-black); }
+.bg-red { background-color: var(--p5-red); }

@@ -1,0 +1,47 @@
+.p5-menu-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  position: relative;
+  overflow: hidden;
+}
+
+.p5-bg-stripe {
+  position: absolute;
+  top: -20%;
+  left: 25%;
+  width: 350px;
+  height: 150%;
+  background-color: var(--p5-red);
+  transform: rotate(-25deg);
+  z-index: 0;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  box-shadow: inset 10px 0 20px rgba(0,0,0,0.5);
+}
+
+.p5-menu-list {
+  list-style: none;
+  z-index: 1;
+  position: relative;
+}
+
+.p5-menu-item {
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  color: var(--p5-white);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  display: block;
+  clip-path: polygon(2% 0%, 98% 3%, 96% 97%, 0% 100%);
+  border: 3px solid var(--p5-white);
+  user-select: none;
+}
+
+.p5-menu-text {
+  display: inline-block;
+  transform: rotate(2deg); 
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 0px var(--p5-black);
+}

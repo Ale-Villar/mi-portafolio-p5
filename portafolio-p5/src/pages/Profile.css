@@ -1,0 +1,94 @@
+.profile-container {
+  min-height: 100vh;
+  padding: 50px 10%;
+  color: var(--p5-white);
+  position: relative;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%; 
+  
+  /* ESTADO NORMAL: Blanco y negro dramático */
+  filter: grayscale(100%) contrast(120%); 
+  
+  /* Magia: Hacemos que cualquier cambio en el filtro tarde 0.4 segundos en completarse (fade suave) */
+  transition: filter 0.4s ease-in-out; 
+}
+
+/* ESTADO HOVER: Cuando el mouse pasa por encima */
+.profile-img:hover {
+  /* Le sacamos el blanco y negro (0%), pero le dejamos un toque de contraste para que resalte */
+  filter: grayscale(0%) contrast(110%); 
+}
+
+.profile-content {
+  display: flex;
+  gap: 50px;
+  margin-top: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.character-art-placeholder {
+  flex: 1;
+  min-width: 300px;
+}
+
+.art-box {
+  width: 100%;
+  height: 550px; /* <--- Subimos la altura para que entre tu foto vertical */
+  background-color: var(--p5-red);
+  color: var(--p5-black);
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(10% 0%, 100% 5%, 90% 100%, 0% 95%);
+  border: 5px solid var(--p5-white);
+  transform: rotate(-2deg);
+}
+
+.stats-panel {
+  flex: 2;
+  min-width: 300px;
+}
+
+.profile-title {
+  font-size: 3.5rem;
+  color: var(--p5-red);
+  text-shadow: 2px 2px 0px var(--p5-white);
+  margin-bottom: 20px;
+  transform: rotate(-1deg);
+}
+
+.stats-list {
+  list-style: none;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  background-color: var(--p5-black);
+  padding: 20px;
+  border-left: 5px solid var(--p5-red);
+}
+
+.stats-list li {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.stats-list strong {
+  color: var(--p5-red);
+}
+
+.bio-box p {
+  font-family: sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border: 2px solid var(--p5-red);
+  clip-path: polygon(0 0, 100% 2%, 99% 100%, 1% 98%);
+}
